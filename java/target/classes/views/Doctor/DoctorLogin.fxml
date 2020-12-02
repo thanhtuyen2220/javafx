@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="815.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="834.0" fitWidth="565.0" layoutX="-22.0" layoutY="-69.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../media/5.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="55.0" layoutY="61.0" opacity="0.78" prefHeight="708.0" prefWidth="457.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label alignment="CENTER" layoutX="87.0" layoutY="76.0" opacity="0.78" prefHeight="79.0" prefWidth="283.0" style="-fx-border-color: #ffffff;" text="Welcome, Doctor" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <Separator layoutX="44.0" layoutY="226.0" prefHeight="3.0" prefWidth="370.0" />
+            <Separator layoutX="44.0" layoutY="593.0" prefHeight="3.0" prefWidth="370.0" />
+            <Label alignment="CENTER" layoutX="52.0" layoutY="169.0" prefHeight="47.0" prefWidth="341.0" text="Sign-in to start your session" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUsername" focusColor="#ffffff80" labelFloat="true" layoutX="87.0" layoutY="331.0" prefHeight="47.0" prefWidth="283.0" promptText="USERNAME" style="-fx-background-color: #ffffff22; -fx-background-radius: 50px; -fx-text-fill: #fff; -fx-prompt-text-fill: #fff; -fx-font-size: 18px;" unFocusColor="#ffffff00">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" focusColor="#ffffff80" labelFloat="true" layoutX="87.0" layoutY="417.0" prefHeight="47.0" prefWidth="283.0" promptText="PASSWORD" style="-fx-background-color: #ffffff22; -fx-background-radius: 50px; -fx-text-fill: #fff; -fx-prompt-text-fill: #fff; -fx-font-size: 18px;" unFocusColor="#ffffff00">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnSignin" layoutX="87.0" layoutY="512.0" prefHeight="47.0" prefWidth="283.0" style="-fx-background-color: #42b3f4; -fx-background-radius: 50px;" text="SIGN IN" textFill="WHITE" />
+            <JFXButton fx:id="btnMain" layoutX="164.0" layoutY="621.0" prefHeight="41.0" prefWidth="130.0" style="-fx-background-color: #ff3f3f; -fx-background-radius: 10;" text="GO BACK" textFill="WHITE" />
+            <JFXComboBox id="combo-box" fx:id="dropDept" focusColor="#ffffff80" labelFloat="true" layoutX="87.0" layoutY="237.0" pickOnBounds="false" prefHeight="47.0" prefWidth="283.0" promptText="Select Department" stylesheets="@../../style/style.css" unFocusColor="#ffffff80" visibleRowCount="12" />
+            <Label fx:id="lblErrors" alignment="CENTER" layoutX="58.0" layoutY="464.0" prefHeight="47.0" prefWidth="341.0" text="Errors" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+
+   </children>
+</AnchorPane>

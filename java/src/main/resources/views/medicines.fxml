@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="998.0" prefWidth="1168.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="26.0" layoutY="50.0" prefHeight="20.0" prefWidth="48.0" text="Date">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="94.0" text="Patient name: ">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="133.0" text="Patient ID:">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="167.0" text="Age:">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="204.0" text="Health Insuarance:">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Label>
+      <TreeTableView layoutX="26.0" layoutY="265.0" prefHeight="406.0" prefWidth="745.0">
+        <columns>
+          <TreeTableColumn prefWidth="225.0" text="MEDICINES" />
+          <TreeTableColumn prefWidth="156.0" text="DOSAGE" />
+            <TreeTableColumn prefWidth="360.0" text="DESCRIPTION" />
+        </columns>
+      </TreeTableView>
+      <Label layoutX="26.0" layoutY="710.0" text="MEDICINES">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

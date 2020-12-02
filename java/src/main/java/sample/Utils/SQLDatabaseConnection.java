@@ -1,0 +1,32 @@
+package sample.Utils;
+
+import java.sql.*;
+
+public class SQLDatabaseConnection {
+
+    private static final String USERNAME = "root";
+    private static final String PASSWORD = "";
+    private static final String CONN = "jdbc:mysql://localhost:3306/db?useTimezone=true&serverTimezone=UTC" /*+ "&useUnicode=true&characterEncoding=UTF-8"*/;
+    public static Connection getConnection() throws SQLException {
+        Connection conn = null;
+        Statement stmt = null;
+        ResultSet rs=  null;
+
+        try{
+            conn = DriverManager.getConnection(CONN,USERNAME,PASSWORD);
+            stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+            rs = stmt.executeQuery("SELECT * FROM security_user");
+
+            rs.last();
+            System.out.println("Number of rows: " + rs.getRow());
+        }catch(SQLException e) {
+            System.err.println(e);
+//        }finally{
+//            if(conn != null){
+//                conn.close();
+//            }
+//        }
+        }
+        return conn;
+    }
+}
