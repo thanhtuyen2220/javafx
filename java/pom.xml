@@ -38,7 +38,7 @@
         </dependency>
 
     </dependencies>
-    <build>
+    <!--<build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -50,7 +50,7 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
     <properties>
         <maven.compiler.source>1.14</maven.compiler.source>
         <maven.compiler.target>1.14</maven.compiler.target>

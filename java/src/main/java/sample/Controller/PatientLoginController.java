@@ -6,22 +6,19 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
+import javafx.scene.paint.Color;
 import sample.Model.FxmlLoader;
 import sample.Model.SessionSaver;
 import sample.Utils.SQLDatabaseConnection;
-import javafx.scene.paint.Color;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
-
-import javafx.scene.control.Label;
 
 public class PatientLoginController implements Initializable {
     private Connection con = null;
