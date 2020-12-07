@@ -18,7 +18,11 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("views/Patient/PatientSignUp.fxml"));
+            String doctorDashboard = "/views/doctorDashboard.fxml";
+            String patientLogin ="views/Patient/patientLogin.fxml";
+            String mainPage = "views/Patient/mainPage.fxml";
+
+            Parent root = FXMLLoader.load(getClass().getResource("/views/Doctor/DoctorDashBoard.fxml"));
             primaryStage.setTitle("Welcome");
             primaryStage.setScene(new Scene(root, 1200, 700));
             primaryStage.getIcons().add(new Image("media/icon.png"));
@@ -45,6 +49,10 @@ public class Main extends Application {
             ResultSet res = statement.executeQuery(sql);
             int id = res.getRow();
             System.out.print(id);*/
+            primaryStage.show();
+            primaryStage.setMaximized(false);
+            primaryStage.setResizable(false);
+            primaryStage.sizeToScene();
 
         }catch (Exception e) {
             e.printStackTrace();

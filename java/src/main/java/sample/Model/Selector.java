@@ -16,6 +16,10 @@ public class Selector {
             "DERMATOLOGY",
             "PMR"
     };
+    private final static String[] DESCRIPTION = {
+            "Taken on an empty stomach",
+            "Taken after food"
+    };
 
     //String array to store general complains
     private final static String[] COMPLAINS = {
@@ -48,6 +52,7 @@ public class Selector {
             "Exercise"
     };
 
+
     public static String[] getDEPTS() {
         return DEPTS;
     }
@@ -55,6 +60,8 @@ public class Selector {
     public static String[] getCOMPLAINS() {
         return COMPLAINS;
     }
+
+    public static String[] getDESCRIPTION() {return DESCRIPTION;}
 
     //Store the Doctor Dept. as per the patient's complain
     public static String setDepartment(String patientComplain) {

@@ -13,6 +13,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 import sample.Model.FxmlLoader;
 import sample.Model.Selector;
+import sample.Utils.PasswordValidator;
 import sample.Utils.SQLDatabaseConnection;
 
 import java.net.URL;
@@ -78,6 +79,7 @@ public class PatientSignUpController implements Initializable {
             lblErrors.setTextFill(Color.TOMATO);
             lblErrors.setText("Passwords donot match!");
         }
+
         //check if username already exists in database
         else if(checkUsername(txtUsername.getText())){
             txtUsername.clear();

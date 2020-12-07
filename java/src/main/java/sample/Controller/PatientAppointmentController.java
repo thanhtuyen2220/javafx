@@ -104,7 +104,7 @@ public class PatientAppointmentController implements Initializable {
         }
     }*/
 
-    public ArrayList<MakeAppointmentFieldsToReturn> retrievedDocs() throws SQLException {
+    ArrayList<MakeAppointmentFieldsToReturn> retrievedDocs() throws SQLException {
         String SQL ="SELECT FULL_NAME,START_TIME FROM security_user JOIN in_hospital_doctor ON security_user.SECURITY_ID = in_hospital_doctor.SECURITY_ID_DOCTOR where in_hospital_doctor.IS_AVAILABLE = 1";
 
         Statement stmt = null;
@@ -114,7 +114,6 @@ public class PatientAppointmentController implements Initializable {
         resultSet = stmt.executeQuery(SQL);
 
         ArrayList<MakeAppointmentFieldsToReturn> docList = new ArrayList<>();
-
 
         while(resultSet.next()){
             String fname = resultSet.getString(1);
